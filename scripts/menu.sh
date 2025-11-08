@@ -2,12 +2,17 @@
 
 while true; do
 	clear
-	echo -e "\e[1;34m===== MENÚ PRINCIPAL =====\e[0m"
-	echo "1. Realizar Backup"
-	echo "2. Generar informe del sistema"
-	echo "3. Limpiar archivos temporales"
-	echo "4. Salir" 
-	read -p "Seleccione una opcion: " opcion
+	echo -e "\e[1;44m  ------------------------------------"
+	echo -e "             MENÚ PRINCIPAL"
+	echo -e " ------------------------------------"
+	echo -e " 1. Realizar Backup"
+	echo -e " 2. Generar informe del sistema"
+	echo -e " 3. Limpiar archivos temporales"
+	echo -e " 4. Salir"
+	echo -e " ------------------------------------\e[0m"
+ 
+	read -p " Seleccione una opcion: " opcion
+
 
 	case $opcion in
 		1) bash backup.sh
@@ -16,12 +21,14 @@ while true; do
 		echo ""
 		read -p "Presione Enter para volver al menú..."
 		;;
+
 		2) bash informe.sh
 		echo ""
 		echo -e "\e[1;32m Informe generado exitosamente.\e[0m"
 		echo ""
                 read -p "Presione Enter para volver al menú..."
 		;;
+
 		3) bash limpiar.sh
 		echo ""
 		echo -e "\e[1;32m Limpieza completada con exito.\e[0m"
