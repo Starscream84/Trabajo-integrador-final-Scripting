@@ -24,7 +24,7 @@ while true; do
 		;;
 		3) bash limpiar.sh
 		echo ""
-		echo -e "e\[1;32m Limpieza completada con exito.\e[0m"
+		echo -e "\e[1;32m Limpieza completada con exito.\e[0m"
                 read -p "Presione Enter para volver al menú..."
 		;;
 		4) echo -e "\e[1;33m Saliendo...\e[0m"; sleep 2; break;;
