@@ -10,10 +10,24 @@ while true; do
 	read -p "Seleccione una opcion: " opcion
 
 	case $opcion in
-		1) bash backup.sh ;;
-		2) bash informe.sh ;;
-		3) bash limpiar.sh ;;
-		4) echo "Saliendo..." break;;
-		*) echo "Opcion no válida"; sleep 2;;
+		1) bash backup.sh
+		echo ""
+		echo -e "\e[1;32m Backup completado correctamente.\e[0m"
+		echo ""
+		read -p "Presione Enter para volver al menú..."
+		;;
+		2) bash informe.sh
+		echo ""
+		echo -e "\e[1;32m Informe generado exitosamente.\e[0m"
+		echo ""
+                read -p "Presione Enter para volver al menú..."
+		;;
+		3) bash limpiar.sh
+		echo ""
+		echo -e "e\[1;32m Limpieza completada con exito.\e[0m"
+                read -p "Presione Enter para volver al menú..."
+		;;
+		4) echo -e "\e[1;33m Saliendo...\e[0m"; sleep 2; break;;
+		*) echo -e "\e[1;31m Opcion no válida. Intente nuevamente.\e[0m"; sleep 2;;
 	esac
 done
