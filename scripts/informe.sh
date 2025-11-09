@@ -36,3 +36,4 @@ df -h | tee -a "$log"
 echo "" | tee -a "$log"
 echo "Informe guardado en: $log" | tee -a "$log"
 sleep 2
+

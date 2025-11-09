@@ -2,15 +2,15 @@
 
 while true; do
 	clear
-	echo -e "\e[1;44m  ------------------------------------"
-	echo -e "             MENÚ PRINCIPAL"
-	echo -e " ------------------------------------"
+	echo -e "\e[1;34m ------------------------------\e[0m"
+	echo -e "\e[1;34m        MENÚ PRINCIPAL         \e[0m"
+	echo -e "\e[1;34m ------------------------------\e[0m"
 	echo -e " 1. Realizar Backup"
 	echo -e " 2. Generar informe del sistema"
 	echo -e " 3. Limpiar archivos temporales"
 	echo -e " 4. Salir"
-	echo -e " ------------------------------------\e[0m"
- 
+	echo -e " \e[1;34m ------------------------------\e[0m"
+
 	read -p " Seleccione una opcion: " opcion
 
 
